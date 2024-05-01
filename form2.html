@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form2.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Demo Form</h1>
+    <header></header>
+
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your email address</label>
+              <input type="email" name="user-email" id="useremail" required />
+            </li>
+
+            <li>
+              <label for="userpassword">Your password</label>
+              <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                required
+              />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>
+              <label for="favorite-color">How did you find us ?</label>
+              <select name="favorite-color" id="favorite-color">
+                <option value="">Web Search</option>
+                <option value="">Friends</option>
+                <option value="">LinkedIn</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="usermessage">Your Message</label>
+          <textarea
+            name="user-message"
+            id="usermessage"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="verify"
+                id="verify-text-message"
+                required
+              />
+              <label for="verify-text-message">Via Textmessage </label>
+            </li>
+
+            <li class="form-control-inline">
+              <input type="radio" name="verify" id="verify-phone" required />
+              <label for="verify-phone">Via a phone Call </label>
+            </li>
+
+            <li class="form-control-inline">
+              <input type="radio" name="verify" id="verify-email" required />
+              <label for="verify-email">Via an email </label>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms</label>
+          </div>
+        </section>
+
+        <section>
+          <div class="button-row">
+            <button class="button2">Clear</button>
+            <button>Submit</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
