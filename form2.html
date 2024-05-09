@@ -17,7 +17,7 @@
     <header></header>
 
     <main>
-      <form action="/" method="GET">
+      <form action="/webfood" method="GET">
         <section>
           <h2>How can we help you?</h2>
           <ul>
@@ -45,11 +45,11 @@
         <section>
           <ul>
             <li>
-              <label for="favorite-color">How did you find us ?</label>
-              <select name="favorite-color" id="favorite-color">
-                <option value="">Web Search</option>
-                <option value="">Friends</option>
-                <option value="">LinkedIn</option>
+              <label for="how-did-you-find">How did you find us ?</label>
+              <select name="how-did-you-find" id="how-did-you-find">
+                <option value="web">Web Search</option>
+                <option value="friends">Friends</option>
+                <option value="linkedin">LinkedIn</option>
               </select>
             </li>
           </ul>
@@ -73,18 +73,31 @@
                 type="radio"
                 name="verify"
                 id="verify-text-message"
+                value="text"
                 required
               />
               <label for="verify-text-message">Via Textmessage </label>
             </li>
 
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="verify-phone" required />
+              <input
+                type="radio"
+                name="verify"
+                id="verify-phone"
+                value="phone"
+                required
+              />
               <label for="verify-phone">Via a phone Call </label>
             </li>
 
             <li class="form-control-inline">
-              <input type="radio" name="verify" id="verify-email" required />
+              <input
+                type="radio"
+                name="verify"
+                id="verify-email"
+                value="mail"
+                required
+              />
               <label for="verify-email">Via an email </label>
             </li>
           </ul>
